@@ -1,0 +1,16 @@
+target
+/build/**
+
+.idea*
+!.idea_copy/workspace.xml
+#  but it is not working
+# "Из-за странностей Git, связанных с производительностью, вы не можете отменить игнорирование файла, которое задано шаблоном соответствия каталогу"
+# ref: https://www.atlassian.com/ru/git/tutorials/saving-changes/gitignore
+
+*.jar
+!module2.jar
+#файл module2.jar из п 2.1.b по-прежнему не должен игнорироваться
+
+application-local.properties
+
+*.iml
